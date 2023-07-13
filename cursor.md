@@ -1,5 +1,5 @@
 # Multiple Cursors
 
-- Ctrl D (Ctrl + Shift + L);
+- Ctrl D (Ctrl + Shift + L)
 - Arrow
 - Alt + Shift + Arrow
