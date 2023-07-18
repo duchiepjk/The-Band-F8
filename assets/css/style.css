@@ -59,12 +59,15 @@ html {
   width: 100%;
 }
 
-.mt-8 {
+.mobile-mt-8 {
   margin-top: 8px !important;
 }
 
 .mt-16 {
   margin-top: 16px !important;
+}
+.mt-32 {
+  margin-top: 32px !important;
 }
 
 .btn {
@@ -76,6 +79,9 @@ html {
   color: #fff;
   border: none;
   cursor: pointer;
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -101,7 +107,7 @@ html {
   display: inline-block;
 }
 #nav,
-ul {
+.subnav {
   list-style: none;
 }
 #nav > li {
@@ -154,7 +160,12 @@ ul {
 #nav .nav-arrow-down {
   font-size: 14px;
 }
-
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
 #header .mobile-menu-btn,
 #header .search-btn {
   float: right;
@@ -202,6 +213,7 @@ ul {
 #slider .text-description {
   font-size: 15px;
   margin-top: 25px;
+  text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -240,7 +252,7 @@ ul {
 }
 
 #content .member-list {
-  margin-top: 48px;
+  margin-top: 32px;
   /* overflow: hidden; */
 }
 #content .member-item {
@@ -302,7 +314,7 @@ ul {
   /* Note: trên, trái phải, dưới */
   /* margin: 32px -8px 48px; */
   /* replace for class row */
-  margin-top: 32px;
+  margin-top: 16px;
   /* margin-bottom: 48px; */
 }
 
@@ -349,6 +361,15 @@ ul {
 .contact-info i[class*="ti-"] {
   width: 30px;
   display: inline-block;
+}
+
+.contact-info a {
+  color: #101aef;
+  opacity: 0.8;
+}
+
+.contact-info a:hover {
+  opacity: 1;
 }
 
 .contact-form {
